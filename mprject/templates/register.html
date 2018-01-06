@@ -1,0 +1,44 @@
+% rebase('templates/mainp.html', title='Register User')
+<html>
+
+<link rel="stylesheet" href="/statics/css/style.css"> 
+<body>
+
+
+
+<div>
+  <form action="/form-submit" method='POST'>
+<fieldset>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+<label for="mobileno">Mobile Number</label>
+    <input type="text" id="mobileno" name="mobileno" placeholder="Your Mobile Number.." required>
+        
+<label for="zipcod">Zip Code</label>
+    <input type="text" id="zipcod" name="zipcod" placeholder="Your Zip Code.." required>
+    <label for="email">E Mail:</label>
+    <input type="text" id="email" name="email" placeholder="Your E Mail.." required>
+    <label for="username">User Name</label>
+    <input type="text" id="username" name="username" placeholder="Your Username.." required>
+    <label for="password">PassWord</label>
+    <input type="password" id="password" name="password" placeholder="Re Type Your Password.." required>
+    <label for="confpassword"> Confirm PassWord</label>
+    <input type="password" id="confpassword" name="confpassword" placeholder="Your Password.." required>
+   
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="iran">Iran</option>
+      <option value="france">France</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
